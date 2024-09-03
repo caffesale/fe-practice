@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --mq-mobile: 375px;
+  --mq-desktop: 1440px;
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-slate-300: hsl(212, 45%, 89%);
+  --clr-slate-500: hsl(216, 15%, 48%);
+  --clr-slate-900: hsl(218, 44%, 22%);
+  --fs-md: 15px;
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
