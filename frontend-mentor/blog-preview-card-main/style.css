@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --clr-yellow: hsl(47, 88%, 63%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-gray-500: hsl(0, 0%, 42%);
+  --clr-gray-950: hsl(0, 0%, 7%);
+
+  --fs-xlg: 24px;
+  --fs-lg: 16px;
+  --fs-md: 14px;
+
+  --fw-md: 500;
+  --fw-bold: 800;
+
+  --gap-thin: 4px;
+  --gap-normal: 8px;
+  --gap-thick: 12px;
+  --gap-extra-thick: 16px;
+
+  --radius: 15px;
+
+  font-family: "Figtree";
+  letter-spacing: 0px;
+}
+
+.background {
+  display: grid;
+  place-items: center;
+  background-color: var(--clr-yellow);
+  height: 100vh;
+  height: 100svh;
+  height: 100dvh;
+}
+
+.card {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 24px;
+  max-width: 384px;
+  padding: 24px;
+  background-color: var(--clr-white);
+  border: 1px solid black;
+  border-radius: var(--radius);
+  box-shadow: 7px 7px 0px black;
+  @media screen and (width <= 375px) {
+    max-width: 327px;
+  }
+}
+
+.card > [data-space="small"] {
+  gap: 12px;
+}
+
+.card--picture {
+  width: 100%;
+  height: 200px;
+  @media screen and (width <= 375px) {
+    width: 279px;
+  }
+}
+
+.card--picture > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.card--main {
+  display: grid;
+  gap: 12px;
+}
+
+.card--main > *,
+h1 {
+  margin-block: 0px;
+}
+
+.card--title {
+  all: unset;
+  cursor: pointer;
+}
+
+.card--title:is(:hover, :focus) {
+  color: var(--clr-yellow);
+}
+
+.card--badge {
+  display: inline-block;
+  justify-self: start;
+  background-color: var(--clr-yellow);
+  padding-inline: 12px;
+  padding-block: 4px;
+  border-radius: 5px;
+  font-weight: var(--fw-bold);
+}
+
+.card--paragraph {
+  color: var(--clr-gray-500);
+}
+
+.author--link {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-thick);
+}
+
+.author--link:is(:hover, :focus) {
+  color: var(--clr-yellow);
+}
+
+.author--icon {
+  width: 32px;
+  height: 32px;
+}
+
+.author--icon > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.author--paragraph {
+  margin-block: 0;
+  font-weight: var(--fw-bold);
+  font-style: normal;
+}
