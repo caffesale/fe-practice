@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  --clr-green-200: hsl(148, 38%, 91%);
+  --clr-green-600: hsl(169, 82%, 27%);
+  --clr-red: hsl(0, 66%, 54%);
+  --clr-white: hsl(0, 5%, 100%);
+  --clr-grey-500: hsl(186, 15%, 59%);
+  --clr-grey-900: hsl(187, 24%, 22%);
+
+  --fs-md: 16px;
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  font-family: "Karla";
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  background-color: var(--clr-green-200);
+  height: 100vh;
+  height: 100dvh;
+  height: 100svh;
+  padding-inline: 10px;
+  padding-block-start: 15px;
+}
+
+.main {
+  padding: 20px;
+  background-color: var(--clr-white);
+  border-radius: 20px;
+
+  margin-inline: auto;
+  @media screen and (width > 720px) {
+    width: 560px;
+  }
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.grid:is([data-span="2"]) {
+  grid-column: span 2;
+  @media screen and (max-width: 375px) {
+    grid-column: auto;
+  }
+}
+
+.subgrid {
+  grid-column: span 2;
+  grid-template-columns: subgrid;
+
+  @media screen and (max-width: 375px) {
+    grid-column: auto;
+  }
+}
+
+.subgrid > .label {
+  grid-column: span 2;
+
+  @media screen and (max-width: 375px) {
+    grid-column: auto;
+  }
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  @media screen and (max-width: 375px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.invalid {
+  display: none;
+}
+
+.form-group:has(:invalid) {
+  & > .label {
+    color: var(--clr-red);
+  }
+  & > .label::after {
+    color: var(--clr-red);
+  }
+
+  & > .invalid {
+    display: block;
+    color: var(--clr-red);
+  }
+}
+
+.label {
+  margin: 0;
+  font-size: var(--fs-md);
+}
+
+.label::after {
+  content: "*";
+  padding-inline-start: 0.25rem;
+  color: var(--clr-green-600);
+}
+
+.text-input {
+  padding: 10px;
+  border: 1px solid var(--clr-green-600);
+  border-radius: 7px;
+}
+
+.text-input:not(:placeholder-shown):invalid {
+  border: 1px solid var(--clr-red);
+}
+
+.text-input:focus:invalid {
+  border: 1px solid var(--clr-red);
+}
+
+.textarea {
+  resize: none;
+}
+
+.radio-input {
+  padding: 10px;
+  border: 1px solid var(--clr-green-600);
+  border-radius: 7px;
+}
+
+.button {
+  padding-block: 10px;
+  border: none;
+  border-radius: 7px;
+  background-color: var(--clr-green-600);
+  color: var(--clr-white);
+  font-weight: var(--fw-normal);
+  letter-spacing: 0.24ch;
+}

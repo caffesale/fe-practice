@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <h1>Contact Us</h1>
+        <form
+          class="form"
+          method="post"
+          action="http://127.0.0.1:5500/index.html?Message="
+        >
+          <div class="grid form-group">
+            <label class="label" for="FirstName">First Name</label>
+            <input class="text-input" id="FirstName" type="text" required />
+            <span class="invalid">this field is required</span>
+          </div>
+
+          <div class="grid form-group">
+            <label class="label" for="LastName">Last Name</label>
+            <input class="text-input" id="LastName" type="text" required />
+            <span class="invalid">this field is required</span>
+          </div>
+
+          <div class="grid form-group" data-span="2">
+            <label class="label" for="email">Email Address</label>
+            <input
+              class="text-input"
+              id="email"
+              type="text"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              required
+            />
+            <span class="invalid">Please enter a valid email address</span>
+          </div>
+
+          <div class="grid subgrid form-group">
+            <span class="label" data-span="2">Query Type</span>
+
+            <label class="radio-input">
+              <input
+                class=""
+                type="radio"
+                value="General Enquiry"
+                name="query-type"
+                required
+              />
+              <span class="label">General Enquiry</span>
+            </label>
+
+            <label class="radio-input">
+              <input
+                class=""
+                type="radio"
+                value="Support Request"
+                name="query-type"
+              />
+              <span>Support Request</span>
+            </label>
+
+            <span class="invalid">this field is required</span>
+          </div>
+
+          <div class="grid form-group" data-span="2">
+            <label class="label" for="Message">Message</label>
+            <textarea
+              class="text-input textarea"
+              name="Message"
+              id="Message"
+              rows="3"
+              required
+            ></textarea>
+            <span class="invalid">this field is required</span>
+          </div>
+
+          <div class="grid subgrid form-group" data-span="2">
+            <label class="label">
+              <input type="checkbox" name="agreement" required />
+              <span>I consent to being contacted by the term</span>
+            </label>
+            <span class="label invalid">
+              To submit this form, please consent to being contacted
+            </span>
+          </div>
+
+          <button class="grid button" data-span="2" type="submit">
+            Submit
+          </button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
