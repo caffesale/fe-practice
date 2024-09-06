@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Red Hat Text";
+  src: url("./assets/assets/fonts/RedHatText-VariableFont_wght.ttf");
+}
+
+:root {
+  --clr-red: hsl(14, 86%, 42%);
+  --clr-green: hsl(159, 69%, 38%);
+  --clr-rose-50: hsl(20, 50%, 98%);
+  --clr-rose-100: hsl(13, 31%, 94%);
+  --clr-rose-300: hsl(14, 25%, 72%);
+  --clr-rose-400: hsl(7, 20%, 60%);
+  --clr-rose-500: hsl(12, 20%, 44%);
+  --clr-rose-900: hsl(14, 65%, 9%);
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-base: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 20px;
+  --fs-2xl: 24px;
+  --fs-3xl: 30px;
+  --fs-4xl: 36px;
+  --fw-normal: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}
+
+.flex {
+  background-color: var(--clr-rose-100);
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: 40px;
+}
+
+@media screen and (width <= 640px) {
+  .container {
+    flex-flow: column;
+  }
+}
+
+.product-list {
+  flex-grow: 1;
+}
+
+.title {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  margin-block-end: 20px;
+}
+
+.list {
+  --min: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}

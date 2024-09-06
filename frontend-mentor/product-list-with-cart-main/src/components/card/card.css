@@ -1,0 +1,73 @@
+.image-section {
+  position: relative;
+  display: grid;
+  margin-block-end: 35px;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.count-container {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  justify-self: center;
+  align-self: flex-end;
+  transform: translateY(50%);
+  background-color: white;
+  border: 1px solid var(--clr-rose-400);
+  border-radius: 100vmax;
+}
+
+.count-icon {
+  display: flex;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semi-bold);
+}
+
+.button[data-counter] {
+  background-color: var(--clr-red);
+  justify-content: space-evenly;
+  color: white;
+}
+
+.category {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-normal);
+  margin-block-end: 10px;
+  color: var(--clr-rose-400);
+}
+
+.dessert-name {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semi-bold);
+  margin-block-end: 10px;
+}
+
+.price {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  color: var(--clr-red);
+}
+
+.price::before {
+  content: "$";
+}
