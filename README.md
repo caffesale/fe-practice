@@ -23,5 +23,9 @@ icodethis, frontendmentor challenges
   ```
 
 - day4 ~ day5: product-list-width
+
   - 특이사항 없음.
   - 최적화 테스트 및 derived State의 검증
+
+- day6: social-links-profile-main
+  - 특이사항 없음.
