@@ -4,7 +4,7 @@ import DecrementIcon from "../../../assets/images/icon-decrement-quantity.svg?re
 import IncrementIcon from "../../../assets/images/icon-increment-quantity.svg?react";
 import "./card.css";
 
-export default function Card({
+function Card({
   image,
   category,
   name,
@@ -66,3 +66,7 @@ export default function Card({
     </div>
   );
 }
+
+export default React.memo(Card, (prevState, nextState) => {
+  return prevState.quantity === nextState.quantity;
+});

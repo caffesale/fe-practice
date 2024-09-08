@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey-700: hsl(0, 0%, 20%);
+  --clr-grey-800: hsl(0, 0%, 12%);
+  --clr-grey-900: hsl(0, 0%, 8%);
+
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 20px;
+  --fs-2xl: 24px;
+  --fs-3xl: 26px;
+  --fs-4xl: 28px;
+
+  --fw-normal: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  font-family: Inter;
+}
+.background {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  height: 100dvh;
+  height: 100svh;
+  background-color: var(--clr-grey-900);
+}
+
+.container {
+  display: grid;
+  align-items: center;
+  gap: 16px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: var(--clr-grey-800);
+  color: var(--clr-white);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  justify-self: center;
+}
+.avatar > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.description {
+  text-transform: capitalize;
+  text-align: center;
+  & > * {
+    margin-block: 0.5rem;
+  }
+}
+
+.description > p {
+  font-size: var(--fs-sm);
+}
+
+.description > [data-emphasis] {
+  margin-block-end: 20px;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-green);
+}
+
+.button {
+  all: unset;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-align: center;
+  border-radius: 7px;
+  background-color: var(--clr-grey-700);
+  color: var(--clr-white);
+  text-transform: capitalize;
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semi-bold);
+  padding-block: 10px;
+  padding-inline: 10px;
+  &:is(:focus, :hover) {
+    background-color: var(--clr-green);
+  }
+}
