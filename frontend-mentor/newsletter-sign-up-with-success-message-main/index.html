@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="form-section">
+          <h1 class="title">Stay updated!</h1>
+          <p class="description">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+
+          <ul class="list">
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+
+          <form class="form">
+            <label class="label" for="email"> Email address </label>
+            <input
+              class="input"
+              id="email"
+              type="email"
+              placeholder="email@company.com"
+            />
+            <button class="button form-submit" type="button">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+        <div class="image-section">
+          <picture class="image">
+            <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 720px)">
+
+            <img
+              src="./assets/images/illustration-sign-up-desktop.svg"
+              alt=""
+              srcset=""
+            />
+          </picture>
+        </div>
+      </div>
+    </main>
+
+    <dialog class="modal">
+      <img class="success" src="./assets/images/icon-success.svg" alt=""> </img>
+      <h2 class="modal-title">Thanks for subscribing!</h2>
+      <p class="modal-paragraph">
+        A confirm email has been sent to <b class="modal-b">ash@loremcompany.com.</b>
+        please open it and click the button inside to confirm your subscription.
+      </p>
+      <button class="button modal-close">Dismiss message</button>
+    </dialog>
+
+    <script src="./index.js" defer></script>
+  </body>
+</html>
