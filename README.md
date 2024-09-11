@@ -31,7 +31,11 @@ icodethis, frontendmentor challenges
 
   - 특이사항 없음.
 
-- day7: newsletter-sign-up-with-success-message-main
+- day7 ~ day8: newsletter-sign-up-with-success-message-main
+
   - dialog element:
     - width:100%로 덮을 수 없는 padding을 가짐. 네거티브 마진으로도 해결불가.
     - display: grid, flex값일 때 dialog.close() method 동작 안함. dialog.style.display= none으로는 해결 가능
+
+- day9: faq-accordion-main
+  - details mark: safari의 ::-webkit-details-marker selector로 처리하기
