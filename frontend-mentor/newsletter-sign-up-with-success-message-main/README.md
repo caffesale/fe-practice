@@ -1,8 +1,5 @@
-# React + Vite
+# 고려사항
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- dialog element:
+  - width:100%로 덮을 수 없는 padding을 가짐. 네거티브 마진으로도 해결불가.
+  - display: grid, flex값일 때 dialog.close() method 동작 안함. dialog.style.display= none으로는 해결 가능
