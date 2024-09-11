@@ -1,0 +1,30 @@
+name: Update readme
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Run update_readme_script
+        working-directory: .
+        run: |
+          python3 update_readme.py
+      - name: Commit changes
+        run: |
+          git config --global user.name 'caffesale'
+          git config --global user.email 'pglibrary80@gmail.com'
+          git add -A
+          git commit -am "auto-update README.md" # 커밋 메시지
+      - name: Push changes
+        run: |
+          git push
