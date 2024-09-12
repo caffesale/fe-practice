@@ -1,7 +1,7 @@
 import useFetch from "./api/useFetch";
 import DiceIcon from "./assets/images/icon-dice.svg";
 import Divider from "./assets/images/pattern-divider-desktop.svg";
-import MobileDivider from "./assets/images/pattern-divider-mobile.svg";
+// import MobileDivider from "./assets/images/pattern-divider-mobile.svg";
 
 function App() {
   const url = import.meta.env.VITE_ADVICE_API;

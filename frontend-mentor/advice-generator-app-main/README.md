@@ -1,8 +1,5 @@
-# React + Vite
+# 고려사항
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- tailwindcss의 pseudo-elements selector는 제한적.
+- tailwindcss에서 custom값을 직접 입력할 때 utility-class의 컨벤션적인 이득과 저울 비교 필요.
+- canary 업데이트시 useOptimistic hook testing 가능
