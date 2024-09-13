@@ -1,0 +1,4 @@
+- 고려사항
+  - 동일 항목에 대한 checkbox처리
+  - sr-only class를 이용한 input처리
+  - 접근성 측면에서 focus처리 및 안내에 대한 고려

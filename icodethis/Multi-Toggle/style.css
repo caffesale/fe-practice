@@ -1,0 +1,86 @@
+.background {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  height: 100dvh;
+  height: 100svh;
+  background-color: #94a3b8;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: #475569;
+  padding: 30px;
+  color: #f1f5f9;
+}
+
+.title {
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.paragraph {
+  color: #94a3b8;
+  text-align: center;
+  max-width: 40ch;
+}
+
+.grid {
+  --min: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-block-end: 30px;
+}
+
+.checkbox {
+  background-color: #1e293b;
+  border-radius: 3px;
+  color: #94a3b8;
+  text-align: center;
+  padding: 10px;
+}
+
+.checkbox:has(:checked) {
+  --blur-effect: 25px;
+  outline: 2px solid #e11d48;
+  box-shadow: 0 0 var(--blur-effect) #e11d48;
+  color: white;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #1e293b;
+  border: 1px solid #0f172a;
+  border-radius: 3px;
+  color: #94a3b8;
+}
+
+.btn:is(:focus, :hover) {
+  outline: 1px solid #e11d48;
+}
+
+.submit {
+  background-color: #e11d48;
+  border: none;
+  color: white;
+}
