@@ -10,6 +10,7 @@ ct_dir_path = 'icodethis'
 ct_dir_root = 'icodethis/'
 
 fm_folders = [f for f in listdir(fm_dir_path)]
+ct_folders = [f for f in listdir(ct_dir_path)]
 
 title = "# frontend-mentor, icodethis 연습을 위한 repository입니다" + "\n"
 
@@ -22,6 +23,9 @@ def update_readme():
 
     updated_contents = ''
     for challenge in fm_folders:
+        updated_contents += (to_bullet_line(challenge) + '\n')
+
+    for challenge in ct_folders:
         updated_contents += (to_bullet_line(challenge) + '\n')
 
 
