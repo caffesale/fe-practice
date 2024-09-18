@@ -12,3 +12,4 @@
 - [qr-code-component-main](frontend-mentor//qr-code-component-main)
 - [Multi-Toggle](frontend-mentor//Multi-Toggle)
 - [pricing-card](frontend-mentor//pricing-card)
+- [horizontal-scroll](frontend-mentor//horizontal-scroll)
