@@ -1,0 +1,6 @@
+- 고려사항
+  - scroller와 scroller\_\_inner의 width가 같으면 translate(-50%)지정시 애니메이션이 튐
+    - width: max-content로 scroller\_\_inner크기를 container보다 늘림
+    - translate(calc(-50% - --gap // 2))
+  - prefers-reduced-motion=true -> flex-wrap으로 대체하여 전체 요소를 볼 수 있게함
+  - chrome, opera계열 -webkit-mask, mask로 표시 변경
