@@ -1,0 +1,78 @@
+body {
+  background-color: rgb(91, 91, 226);
+  color: white;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Space Mono", monospace;
+}
+
+.container {
+  position: relative;
+}
+
+.glitch {
+  position: relative;
+  animation: flashing-front 1s infinite;
+}
+
+@keyframes flashing-front {
+  19.8% {
+    left: 0;
+    top: 0;
+  }
+
+  20% {
+    left: 5%;
+    top: -5%;
+  }
+
+  20.2% {
+    left: 0;
+    top: 0;
+  }
+
+  37% {
+    left: 0;
+    top: 0;
+    filter: brightness(1);
+  }
+
+  41% {
+    left: -1%;
+    top: 1%;
+    filter: brightness(1.08) blur(3px);
+  }
+
+  45% {
+    left: 0;
+    top: 0;
+    filter: brightness(1);
+  }
+
+  70% {
+    filter: brightness(1) blur(0);
+  }
+
+  85% {
+    filter: brightness(1.08) blur(2px);
+  }
+
+  94.5% {
+    left: 0;
+    top: 0;
+  }
+
+  95% {
+    left: 1%;
+    top: 1%;
+  }
+
+  95.5% {
+    left: 0;
+    top: 0;
+  }
+
+  100% {
+    filter: brightness(1) blur(0);
+  }
+}
