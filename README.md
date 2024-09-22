@@ -12,4 +12,5 @@
 - [easybank-landing-page-master](frontend-mentor//easybank-landing-page-master)
 - [pricing-card](frontend-mentor//pricing-card)
 - [Multi-Toggle](frontend-mentor//Multi-Toggle)
+- [footer-ui](frontend-mentor//footer-ui)
 - [horizontal-scroll](frontend-mentor//horizontal-scroll)
