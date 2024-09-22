@@ -1,0 +1,3 @@
+- 고려사항
+  - ch unit
+  - flex의 content-box 주의하기
