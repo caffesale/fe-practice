@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.main-image-container {
+  position: absolute;
+  top: 20%;
+  left: 12.5%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.circle-item {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

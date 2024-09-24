@@ -1,0 +1,3 @@
+- 고려사항
+  - svg 기본 다지기. textPath등등
+  - oval shape: 가끔 보이니 복습. cos, sin, PI
