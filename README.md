@@ -13,4 +13,5 @@
 - [pricing-card](frontend-mentor//pricing-card)
 - [Multi-Toggle](frontend-mentor//Multi-Toggle)
 - [footer-ui](frontend-mentor//footer-ui)
+- [circle-team](frontend-mentor//circle-team)
 - [horizontal-scroll](frontend-mentor//horizontal-scroll)
