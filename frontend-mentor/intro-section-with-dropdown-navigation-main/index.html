@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="navigation">
+        <div class="image-container">
+          <img src="./images/logo.svg" alt="snap bland logo" />
+        </div>
+
+        <nav>
+          <ul class="desktop-menu-list">
+            <li class="desktop-menu">
+              <button class="navigation--text button" data-role="navigation">
+                Features
+              </button>
+              <div class="navigation--dropdown-menu">
+                <a class="navigation--link" href="/" data-icon="todo">
+                  Todo List
+                </a>
+                <a class="navigation--link" href="/" data-icon="calendar">
+                  Calendar
+                </a>
+                <a class="navigation--link" href="/" data-icon="reminders">
+                  Reminders
+                </a>
+                <a class="navigation--link" href="/" data-icon="planning">
+                  Planning
+                </a>
+              </div>
+            </li>
+
+            <li class="desktop-menu">
+              <button class="navigation--text button" data-role="navigation">
+                Company
+              </button>
+              <div class="navigation--dropdown-menu">
+                <a class="navigation--link" href="/"> History </a>
+                <a class="navigation--link" href="/"> Our Team </a>
+                <a class="navigation--link" href="/"> Blog </a>
+              </div>
+            </li>
+
+            <li class="desktop-menu">
+              <button class="navigation--text button" data-role="navigation">
+                <a href="/">Careers</a>
+              </button>
+            </li>
+
+            <li class="desktop-menu">
+              <button class="navigation--text button" data-role="navigation">
+                <a href="/"> About </a>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="auth">
+        <button class="navigation--text button">
+          <a class="button" href="/">Login</a>
+        </button>
+        <button class="navigation--text button button__outline">
+          <a class="button" href="/">Register</a>
+        </button>
+      </div>
+
+      <button class="button mobile-only mobile-nav-button">
+        <img src="./images/icon-menu.svg" alt="mobile only menu" srcset="" />
+      </button>
+    </header>
+    <main class="main">
+      <section class="hero-section container" aria-labelledby="title">
+        <div class="hero-section__main">
+          <h1 id="title" class="hero-section__title">Make remote work</h1>
+          <p class="hero-section__paragraph">
+            Get your team in sync, no matter your location. Streamline
+            processes. create team rituals, and watch productivity soar.
+          </p>
+
+          <a class="button button__black" href="/">Learn more</a>
+
+          <div class="brand-group">
+            <img
+              class="brand-logo"
+              src="./images/client-databiz.svg"
+              alt="databiz bland icon image"
+            />
+
+            <img
+              class="brand-logo"
+              src="./images/client-audiophile.svg"
+              alt="databiz bland icon image"
+            />
+
+            <img
+              class="brand-logo"
+              src="./images/client-meet.svg"
+              alt="databiz bland icon image"
+            />
+
+            <img
+              class="brand-logo"
+              src="./images/client-maker.svg"
+              alt="databiz bland icon image"
+            />
+          </div>
+        </div>
+
+        <div class="hero-section__image">
+          <picture>
+            <source
+              class="image"
+              media="(min-width: 720px)"
+              srcset="./images/image-hero-desktop.png"
+            />
+            <source
+              class="image"
+              media="(max-width: 719px)"
+              srcset="./images/image-hero-mobile.png"
+            />
+            <img
+              class="image"
+              src="./images/image-hero-desktop.png"
+              alt="person who use laptop"
+            />
+          </picture>
+        </div>
+      </section>
+    </main>
+
+    <aside class="mobile-only mobile-nav-aside" aria-hidden="true">
+      <button class="mobile-close button">
+        <img
+          src="./images/icon-close-menu.svg"
+          alt="mobile navigation close button"
+          srcset=""
+        />
+      </button>
+      <nav class="mobile-nav">
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu">
+            <details>
+              <summary class="navigation--text">Features</summary>
+              <div class="mobile-details-list">
+                <a class="navigation--link" href="/" data-icon="todo">
+                  Todo List
+                </a>
+                <a class="navigation--link" href="/" data-icon="calendar">
+                  Calendar
+                </a>
+                <a class="navigation--link" href="/" data-icon="reminders">
+                  Reminders
+                </a>
+                <a class="navigation--link" href="/" data-icon="planning">
+                  Planning
+                </a>
+              </div>
+            </details>
+          </li>
+
+          <li class="mobile-menu">
+            <details>
+              <summary class="navigation--text">Company</summary>
+              <div class="mobile-details-list">
+                <a class="navigation--link" href="/"> History </a>
+                <a class="navigation--link" href="/"> Our Team </a>
+                <a class="navigation--link" href="/"> Blog </a>
+              </div>
+            </details>
+          </li>
+
+          <li class="mobile-menu">
+            <button class="navigation--text button">
+              <a href="/">Careers</a>
+            </button>
+          </li>
+
+          <li class="mobile-menu">
+            <button class="navigation--text button">
+              <a href="/"> About </a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile-auth">
+        <button class="navigation--text button">
+          <a class="button" href="/">Login</a>
+        </button>
+        <button class="navigation--text button button__outline">
+          <a class="button" href="/">Register</a>
+        </button>
+      </div>
+    </aside>
+  </body>
+</html>
