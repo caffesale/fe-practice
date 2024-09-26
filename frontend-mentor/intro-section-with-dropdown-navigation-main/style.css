@@ -173,11 +173,7 @@ img {
 
 .mobile-nav-aside {
   --right: 2rem;
-  /*
-  * 비표시, transition
-  */
-  display: none;
-  right: 100vw;
+  right: -100vw;
 
   position: fixed;
   top: 0;
@@ -185,6 +181,7 @@ img {
   width: 22.5rem;
   padding: var(--right);
   background-color: var(--clr-almost-white);
+  transition: all 200ms ease-in-out;
 }
 
 .mobile-close {
@@ -233,6 +230,9 @@ img {
   grid-template-columns: repeat(2, 1fr);
   margin-inline: auto;
   padding-inline: 4rem;
+  @media screen and (max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .hero-section__main {
@@ -240,9 +240,19 @@ img {
   align-items: center;
 }
 
+@media screen and (max-width: 720px) {
+  .hero-section__main {
+    gap: 3rem;
+  }
+  .hero-section__main > * {
+    text-align: center;
+    margin-inline: auto;
+  }
+}
+
 .hero-section__title {
   margin-block-start: auto;
-  font-size: var(--fs-5xl);
+  font-size: clamp(var(--fs-2xl), var(--fs-lg) + 5vw, var(--fs-5xl));
   line-height: 1.2;
   font-weight: var(--fw-extra-bold);
   text-wrap: balance;
@@ -256,17 +266,17 @@ img {
 }
 
 .hero-section__image {
+  @media screen and (max-width: 720px) {
+    grid-row: 1;
+    margin-block-end: 4rem;
+  }
 }
 
 .brand-group {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   align-items: center;
-  gap: 2rem;
-}
-
-.brand-logo {
-  width: 8rem;
-  height: 3rem;
+  gap: clamp(1rem, 0.5rem + 3ch, 2rem);
 }
 
 .image {

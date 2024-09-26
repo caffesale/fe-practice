@@ -2,4 +2,5 @@
   - javascript를 사용하지 않는 네비게이션 display: minus margin, padding활용
   - 접근성을 고려한 aria-값 배치, 모바일 nav와 데스크탑 nav를 공유할 수 있는 레이아웃인가?
     - grid로 html 재배치 시도해보기
-  -
+    - aria-hidden을 사용한 스크린 리더 동작 유도
+    - 크롤러를 고려한 display 속성전환
