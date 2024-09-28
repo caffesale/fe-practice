@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <form class="component form" aria-labelledby="title">
+        <button class="icon-container" type="button">
+          <img class="star" src="./images/icon-star.svg" alt="star icon" />
+        </button>
+        <h1 id="title">how did we do?</h1>
+        <p class="paragraph">
+          please let us know how we did with your support request. all feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <div class="rating-group">
+          <button type="button" class="icon-container" data-rate="1">1</button>
+          <button type="button" class="icon-container" data-rate="2">2</button>
+          <button type="button" class="icon-container" data-rate="3">3</button>
+          <button type="button" class="icon-container" data-rate="4">4</button>
+          <button type="button" class="icon-container" data-rate="5">5</button>
+        </div>
+
+        <button class="submit" type="submit">submit</button>
+      </form>
+    </main>
+    <script src="main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --clr-orange: hsl(25, 97%, 53%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-grey: hsl(217, 12%, 63%);
+  --clr-dark-blue: hsl(213, 19%, 18%);
+  --clr-very-dark-blue: hsl(216, 12%, 8%);
+
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 24px;
+  --fs-xlg: 26px;
+  --fs-2xl: 32px;
+  --fs-3xl: 36px;
+  --fs-4xl: 48px;
+
+  --fw-normal: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+
+  font-family: "Overpass";
+  color: var(--clr-white);
+}
+
+.main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  height: 100dvh;
+  height: 100svh;
+  background-color: black;
+}
+
+#title {
+  line-height: 1;
+}
+
+.component {
+  display: grid;
+  gap: 1.5rem;
+  background: linear-gradient(
+    180deg,
+    var(--clr-dark-blue) 0%,
+    var(--clr-very-dark-blue) 100%
+  );
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+[data-p-wide] {
+  padding: 2rem;
+}
+
+.justify-item-center {
+  justify-items: center;
+}
+
+.icon-container {
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.25rem;
+  background-color: var(--clr-dark-blue);
+}
+
+.icon-container:is(:hover, :focus, :focus-within, :focus-visible),
+.submit:is(:hover, :focus, :focus-within, :focus-visible) {
+  background-color: var(--clr-white);
+}
+
+.icon-container:active,
+.submit:active {
+  background-color: var(--clr-orange);
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+}
+
+.paragraph {
+  text-transform: capitalize;
+  font-size: var(--fs-md);
+  text-wrap: pretty;
+  width: 35ch;
+  color: var(--clr-light-grey);
+}
+
+.rating-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--clr-light-grey);
+}
+
+.submit {
+  padding: 0.5rem;
+  border-radius: 100vmax;
+  text-align: center;
+  background-color: var(--clr-orange);
+  text-transform: uppercase;
+  letter-spacing: 0.25ch;
+  color: var(--clr-very-dark-blue);
+  font-weight: var(--fw-bold);
+}
+
+.selected {
+  padding: 10px 20px;
+  background-color: var(--clr-dark-blue);
+  border-radius: 100vmax;
+  text-transform: capitalize;
+  color: var(--clr-orange);
+  font-size: var(--fs-sm);
+  max-width: 25ch;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-sm {
+  font-size: var(--fs-sm);
+}
