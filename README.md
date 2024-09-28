@@ -11,6 +11,7 @@
 - [social-links-profile-main](frontend-mentor//social-links-profile-main)
 - [blog-preview-card-main](frontend-mentor//blog-preview-card-main)
 - [easybank-landing-page-master](frontend-mentor//easybank-landing-page-master)
+- [interactive-rating-component-main](frontend-mentor//interactive-rating-component-main)
 - [pricing-card](frontend-mentor//pricing-card)
 - [Multi-Toggle](frontend-mentor//Multi-Toggle)
 - [footer-ui](frontend-mentor//footer-ui)
