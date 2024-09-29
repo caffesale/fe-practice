@@ -17,3 +17,4 @@
 - [footer-ui](frontend-mentor//footer-ui)
 - [circle-team](frontend-mentor//circle-team)
 - [horizontal-scroll](frontend-mentor//horizontal-scroll)
+- [svg-sample](frontend-mentor//svg-sample)
