@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body>
+    <main class="main">
+      <article class="article">
+        <div class="paragraph-container">
+          <h1 class="title">
+            Get <em>insights</em> that help your business grow.
+          </h1>
+          <p class="description">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+
+          <div class="sales">
+            <div class="sales__point">
+              <b class="sales__number">10k+</b>
+              <span class="sales__description">companies</span>
+            </div>
+
+            <div class="sales__point">
+              <b class="sales__number">314</b>
+              <span class="sales__description">templates</span>
+            </div>
+
+            <div class="sales__point">
+              <b class="sales__number">12M+</b>
+              <span class="sales__description">queries</span>
+            </div>
+          </div>
+        </div>
+        <div class="image-container">
+          <picture>
+            <source
+              class="image"
+              media="(max-width: 720px)"
+              src="./images/image-header-mobile.jpg"
+              alt="header image for mobile view"
+            />
+            <img
+              class="image"
+              src="./images/image-header-desktop.jpg"
+              alt="header image for desktop view"
+            />
+          </picture>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

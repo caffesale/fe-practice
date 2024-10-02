@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+:root {
+  --clr-very-dark-blue: hsl(233, 47%, 7%);
+  --clr-dark-desaturated-blue: hsl(244, 38%, 16%);
+  --clr-soft-violet: hsl(277, 64%, 61%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --clr-slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 24px;
+  --fs-xl: 26px;
+  --fs-2xl: 32px;
+  --fs-2xl: 36px;
+  --fs-3xl: 48px;
+
+  --fw-normal: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+
+  --main-font: "Inter";
+  --sub-font: "Lexend Deca";
+  font-family: var(--main-font);
+}
+
+.main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--clr-dark-desaturated-blue);
+  color: var(--clr-white);
+  border-radius: 10px;
+  @media screen and (max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.paragraph-container {
+  display: grid;
+  justify-content: flex-start;
+  padding: 2rem;
+
+  @media screen and (max-width: 720px) {
+    order: 2;
+    gap: 2rem;
+    & > * {
+      text-align: center;
+      text-wrap: pretty;
+    }
+  }
+}
+
+.title {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-semi-bold);
+}
+
+.title > em {
+  color: var(--clr-soft-violet);
+}
+
+.description {
+  line-height: 1.45;
+  font-size: var(--fs-lg);
+  color: var(--clr-slightly-transparent-white);
+}
+
+.sales {
+  display: flex;
+  flex-flow: wrap row;
+  gap: 3rem;
+  align-self: flex-end;
+
+  @media screen and (max-width: 720px) {
+    flex-flow: wrap column;
+  }
+}
+
+.sales__number {
+  font-size: var(--fs-lg);
+  display: block;
+  margin-block-end: 0.45rem;
+}
+
+.sales__description {
+  font-family: var(--sub-font);
+  text-transform: uppercase;
+  color: var(--clr-slightly-transparent-white);
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: var(--clr-soft-violet);
+  mix-blend-mode: soft-light;
+  filter: brightness(120%) contrast(110%);
+}
