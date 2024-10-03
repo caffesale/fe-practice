@@ -4,6 +4,7 @@
 - [contact-form-main](frontend-mentor//contact-form-main)
 - [newsletter-sign-up-with-success-message-main](frontend-mentor//newsletter-sign-up-with-success-message-main)
 - [bento-grid-main](frontend-mentor//bento-grid-main)
+- [order-summary-component-main](frontend-mentor//order-summary-component-main)
 - [advice-generator-app-main](frontend-mentor//advice-generator-app-main)
 - [product-list-with-cart-main](frontend-mentor//product-list-with-cart-main)
 - [intro-section-with-dropdown-navigation-main](frontend-mentor//intro-section-with-dropdown-navigation-main)
