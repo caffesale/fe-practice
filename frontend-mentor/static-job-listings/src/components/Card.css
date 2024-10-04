@@ -1,0 +1,117 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block-end: 1rem;
+  border-width: 1px;
+  border-radius: 7px;
+  padding: 1rem;
+  margin-block-end: 1rem;
+  background-color: white;
+  position: relative;
+  @media screen and (max-width: 720px) {
+    display: grid;
+  }
+}
+
+.card:has([data-visible="true"]) {
+  border-inline-start: 5px solid var(--clr-desaturated-dark-cyan);
+}
+
+.logo-container {
+  width: 75px;
+  height: 75px;
+  @media screen and (max-width: 720px) {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    transform: translateY(-50%);
+  }
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 5px;
+  @media screen and (max-width: 720px) {
+    margin-block-start: 37.5px;
+    padding-block-end: 1rem;
+    border-block-end: 1px solid var(--clr-dark-grayish-cyan);
+  }
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.info-title {
+  color: var(--clr-desaturated-dark-cyan);
+}
+
+.info-flag {
+  display: none;
+  background-color: var(--clr-desaturated-dark-cyan);
+  color: var(--clr-light-grayish-cyan);
+  border-radius: 100vmax;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semi-bold);
+  padding: 2px 8px;
+  text-transform: uppercase;
+}
+
+.info-flag--black {
+  background-color: black;
+}
+
+.info-flag[data-visible="true"] {
+  display: block;
+}
+
+.job {
+  display: flex;
+}
+
+.job-item {
+  color: var(--clr-dark-grayish-cyan);
+  font-weight: var(--fw-semi-bold);
+}
+
+.job-item:not(:last-child)::after {
+  display: inline-block;
+  content: "•";
+  margin-inline: 10px;
+}
+
+.chips {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  @media screen and (max-width: 720px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+.chip {
+  all: unset;
+  cursor: pointer;
+  background-color: var(--clr-light-grayish-cyan);
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--clr-desaturated-dark-cyan);
+  font-weight: var(--fw-semi-bold);
+}
+
+.chip:is(:hover, :focus, :focus-within) {
+  background-color: var(--clr-desaturated-dark-cyan);
+  color: white;
+}

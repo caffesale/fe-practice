@@ -1,0 +1,82 @@
+.header {
+  display: grid;
+  place-items: center;
+}
+
+.header::before {
+  --width: 100%;
+  --height: 6rem;
+  content: "";
+  display: block;
+  background-color: var(--clr-desaturated-dark-cyan);
+  background-image: url("/images/bg-header-desktop.svg");
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  background-size: var(--width) var(--height);
+
+  width: var(--width);
+  height: var(--height);
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -50%;
+  max-width: var(--max-width);
+  width: 100%;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  @media screen and (max-width: 720px) {
+    width: calc(100% - 2rem);
+  }
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-item {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--clr-light-grayish-cyan);
+  border-radius: 5px;
+  color: var(--clr-desaturated-dark-cyan);
+  font-weight: var(--fw-semi-bold);
+  padding-inline-start: 10px;
+}
+
+.filter-item:is(:hover, :focus, :focus-within) {
+  background-color: var(--clr-desaturated-dark-cyan);
+  color: white;
+}
+
+.filter-cancel {
+  all: unset;
+  cursor: pointer;
+  background-color: var(--clr-desaturated-dark-cyan);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  color: white;
+  padding: 5px;
+}
+
+.filter-cancel:is(:hover, :focus, :focus-within) {
+  background-color: black;
+}
+
+.clear {
+  all: unset;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-lg);
+  color: var(--clr-desaturated-dark-cyan);
+}
