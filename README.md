@@ -7,6 +7,7 @@
 - [order-summary-component-main](frontend-mentor//order-summary-component-main)
 - [advice-generator-app-main](frontend-mentor//advice-generator-app-main)
 - [product-list-with-cart-main](frontend-mentor//product-list-with-cart-main)
+- [static-job-listings](frontend-mentor//static-job-listings)
 - [intro-section-with-dropdown-navigation-main](frontend-mentor//intro-section-with-dropdown-navigation-main)
 - [faq-accordion-main](frontend-mentor//faq-accordion-main)
 - [social-links-profile-main](frontend-mentor//social-links-profile-main)
